@@ -1,12 +1,11 @@
 import Header from "./components/Header";
 
-function App() {
-
+function About() {
   return (
     <>
-      <Header/>
+      <Header />
     </>
   );
 }
 
-export default App;
+export default About;
