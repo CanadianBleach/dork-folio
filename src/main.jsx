@@ -5,6 +5,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import Contact from "./Contact";
 import About from "./About";
+import "./assets/css/global.css"
 
 const router = createBrowserRouter([
   {
