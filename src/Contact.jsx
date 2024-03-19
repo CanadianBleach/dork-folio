@@ -1,10 +1,15 @@
-import React, { Component } from 'react'
-import Header from './components/Header'
+import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
-export default class Contact extends Component {
-  render() {
-    return (
-      <Header/>
-    )
-  }
+function Contact() {
+  return (
+    <>
+      <Header />
+        <ContactForm />
+      <Footer />
+    </>
+  );
 }
+
+export default Contact;
