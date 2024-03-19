@@ -6,3 +6,12 @@ body {
 .footer {
   background-color: #ffffff00;
 }
+
+.project-cont {
+  display: flex;
+}
+
+.project {
+  display: flex;
+  justify-content: space-around;
+}

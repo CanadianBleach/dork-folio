@@ -6,8 +6,13 @@ function Header() {
   return (
     <>
       <div className="cont">
-        <Nav/>
+        <div className="columns">
+          <div className="column m-3 subtitle">Connor Baltich</div>
+          <Nav className="column" />
+        </div>
       </div>
+      <div className="section"></div>
+      <div className="section"></div>
     </>
   );
 }
