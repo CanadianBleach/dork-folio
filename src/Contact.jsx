@@ -6,7 +6,8 @@ function Contact() {
   return (
     <>
       <Header />
-        <ContactForm />
+      <ContactForm />
+      <div className="section"></div>
       <Footer />
     </>
   );

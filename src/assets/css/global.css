@@ -1,17 +1,55 @@
 body {
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-image: linear-gradient(135deg, #c9c3e2 100%, #f5f7fa 0%);
   height: 100vh;
 }
 
 .footer {
   background-color: #ffffff00;
-}
+} 
 
-.project-cont {
-  display: flex;
-}
-
-.project {
+.proj-cont {
+  justify-self: center;
+  padding: 0 200px 0 200px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.proj-img {
+  max-width: 450px;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+  opacity: 100%;
+  transition: all 0.1s ease-in;
+}
+
+.proj-img:hover {
+  opacity: 50%;
+}
+
+proj-link {
+  display: flex;
+}
+
+.icon {
+  font-size: 26px;
+  text-decoration: none;
+}
+
+.profile-img {
+  border-radius: 100%;
+  aspect-ratio: 3 / 3s;
+  max-width: 200px;
+  object-fit: cover;
+}
+
+.profile-cont {
+  max-width: 50%;
+  flex-wrap: wrap;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }

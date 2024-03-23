@@ -43,12 +43,12 @@ const ContactForm = () => {
       };
 
       // Use emailjs to email contact form data
-      await emailjs.send(
+/*       await emailjs.send(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
         templateParams,
         import.meta.env.VITE_PUBLIC_KEY
-      );
+      ); */
 
       // Display success alert
       toggleAlert("Form submission was successful!", "success");
@@ -67,8 +67,8 @@ const ContactForm = () => {
   return (
     <div className="ContactForm">
       <div className="container">
-        <div className="row">
-          <div className="col-12 text-center">
+        <div className="col">
+          <div className="col has-text-center">
             <div className="contactForm">
               <form
                 id="contact-form"
@@ -76,7 +76,7 @@ const ContactForm = () => {
                 noValidate
               >
                 {/* Row 1 of form */}
-                <div className="row formRow">
+                <div className="col form">
                   <div className="col-6">
                     <input
                       type="text"
@@ -91,7 +91,7 @@ const ContactForm = () => {
                           message: "Please use 30 characters or less",
                         },
                       })}
-                      className="form-control formInput"
+                      className="form-control input m-3"
                       placeholder="Name"
                     ></input>
                     {errors.name && (
@@ -109,7 +109,7 @@ const ContactForm = () => {
                         pattern:
                           /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
                       })}
-                      className="form-control formInput"
+                      className="form-control input m-3"
                       placeholder="Email address"
                     ></input>
                     {errors.email && (
@@ -120,7 +120,7 @@ const ContactForm = () => {
                   </div>
                 </div>
                 {/* Row 2 of form */}
-                <div className="row formRow">
+                <div className="col formRow">
                   <div className="col">
                     <input
                       type="text"
@@ -135,7 +135,7 @@ const ContactForm = () => {
                           message: "Subject cannot exceed 75 characters",
                         },
                       })}
-                      className="form-control formInput"
+                      className="form-control input m-3"
                       placeholder="Subject"
                     ></input>
                     {errors.subject && (
@@ -146,7 +146,7 @@ const ContactForm = () => {
                   </div>
                 </div>
                 {/* Row 3 of form */}
-                <div className="row formRow">
+                <div className="col formRow">
                   <div className="col">
                     <textarea
                       rows={3}
@@ -154,7 +154,7 @@ const ContactForm = () => {
                       {...register("message", {
                         required: true,
                       })}
-                      className="form-control formInput"
+                      className="form-control input m-3"
                       placeholder="Message"
                     ></textarea>
                     {errors.message && (
@@ -166,7 +166,7 @@ const ContactForm = () => {
                 </div>
 
                 <button
-                  className="submit-btn btn btn-primary"
+                  className="button m-3 is-button-primary"
                   disabled={disabled}
                   type="submit"
                 >
@@ -184,14 +184,14 @@ const ContactForm = () => {
         >
           {alertInfo.message}
           <button
-            type="button"
-            className="btn-close"
+            type="button m-3"
+            className="button"
             data-bs-dismiss="alert"
             aria-label="Close"
             onClick={() =>
               setAlertInfo({ display: false, message: "", type: "" })
             } // Clear the alert when close button is clicked
-          ></button>
+          >Clear</button>
         </div>
       )}
     </div>
