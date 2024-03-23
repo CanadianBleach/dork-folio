@@ -9,10 +9,7 @@ function About() {
       <div className="is-flex is-flex-wrap-wrap is-justify-content-center">
         <div>
           <h1 className="title">About Me</h1>
-          <img
-            className="profile-img m-2"
-            src="src\assets\images\profile.png"
-          />
+          <img className="profile-img m-2" src="/images/profile.png" />
         </div>
         <div className="is-flex profile-cont">
           <p className="m-2 pt-4">
