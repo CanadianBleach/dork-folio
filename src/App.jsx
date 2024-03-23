@@ -10,26 +10,26 @@ function App() {
       <div className="proj-cont">
         <div>
           <Project
-            src="./src/assets/images/portfolio.png"
+            src="/images/portfolio.png"
             link="https://connorb.myportfolio.com/"
             className=""
           ></Project>
           <div className="section"></div>
           <Project
-            src="./src/assets/images/time-traveler.png"
+            src="\images\time-traveler.png"
             link="https://time-traveler.vercel.app/"
             className=""
           ></Project>
         </div>
         <div>
           <Project
-            src="./src/assets/images/youtube.png"
+            src="/images/youtube.png"
             link="https://www.youtube.com/channel/UC1Y9zkz2Cj2BV9a69QAKJEw"
             className=""
           ></Project>
           <div className="section"></div>
           <Project
-            src="./src/assets/images/unity.png"
+            src="/images/unity.png"
             link="https://github.com/CanadianBleach/Unity-Weapon-Package"
             className=""
           ></Project>
