@@ -7,10 +7,10 @@ function Footer() {
   return (
     <>
       <footer className="footer">
-        <a>
+        <a href="https://www.linkedin.com/in/connorbaltich/" target="_blank">
           <RxLinkedinLogo className="icon m-2" />
         </a>
-        <a>
+        <a href="https://github.com/CanadianBleach" target="_blank">
           <RxGithubLogo className="icon m-2" />
         </a>
       </footer>
